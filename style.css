@@ -1,0 +1,68 @@
+:root {
+  --yellow: #FBF3AB;
+  --light-pink: #F0B9DD;
+  --deep-pink: #F04C86;
+  --skyblue: #87CEEB;
+  --raisin: #2B283A;
+  --white: #fff;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    height: 100vh;
+    min-width: 500px;
+    color: var(--raisin);
+    background: var(--skyblue) url("banner1.png") no-repeat center;
+    font-family: 'Karla', sans-serif;
+}
+
+h1 {
+    color: var(--yellow);
+    background: rgb(255, 0, 0, 0.6);
+    padding: 0.75em;
+    border-radius: 5px;
+}
+
+p {    
+    background: var(--light-pink);
+    color: var(--raisin);
+    min-height: 50px;
+    width: 80%;
+    padding: 0.65em 1em;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 5px;
+}
+
+button {
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 5px;
+    border: none;
+    padding: 1em 1.25em;
+    color: var(--white);
+    background: var(--deep-pink);
+    margin-top: 1.6em;
+}
+
+button:hover,
+button:focus {
+    transform: scale(1.02);
+    cursor: pointer;  
+    color: var(--skyblue);
+}
+
